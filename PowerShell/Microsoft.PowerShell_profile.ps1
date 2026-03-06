@@ -1,9 +1,9 @@
 # Navigation shortcuts
-function up1 { Set-Location .. }
-function up2 { Set-Location ../.. }
-function up3 { Set-Location ../../.. }
-function up4 { Set-Location ../../../.. }
-function up5 { Set-Location ../../../../.. }
+function .. { Set-Location .. }
+function ... { Set-Location ../.. }
+function .3 { Set-Location ../../.. }
+function .4 { Set-Location ../../../.. }
+function .5 { Set-Location ../../../../.. }
 
 # Neovim shortcut
 function v { nvim @args }
@@ -15,9 +15,9 @@ function ll  { eza -l --color=always --icons=always --group-directories-first }
 function lt  { eza -aT --color=always --icons=always --group-directories-first }
 
 # Listing parent directories — renamed due to syntax limits in PowerShell
-function l1  { eza -al --color=always --icons=always --group-directories-first ../ }
-function l2  { eza -al --color=always --icons=always --group-directories-first ../../ }
-function l3  { eza -al --color=always --icons=always --group-directories-first ../../../ }
+function l.  { eza -al --color=always --group-directories-first ../ }
+function l..  { eza -al --color=always --group-directories-first ../../ }
+function l... { eza -al --color=always --group-directories-first ../../../ }
 
 # Show only dotfiles in current directory
 function ldot { eza -a | Select-String "^\." }
@@ -46,3 +46,13 @@ function tag      { git tag }
 function newtag   { git tag -a @args }
 
 Invoke-Expression (&starship init powershell)
+
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
