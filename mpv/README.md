@@ -1,4 +1,5 @@
 # My MPV Configuration
+⚠️ Some scripts may contain small personal modifications.
 
 This repository lists the Lua scripts I use with **mpv** to enhance playback, usability, and UI.  
 Most of these scripts are created by other developers — I only use them in my setup and sometimes make small adjustments so they work better for my configuration.
