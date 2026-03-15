@@ -27,22 +27,22 @@ Examples:
 Force reconversion of files that are already MP3.
 
 .EXAMPLE
-.\tomp3.ps1.ps1 video.mp4
+.\tomp3.ps1 video.mp4
 
 Convert a single file.
 
 .EXAMPLE
-.\tomp3.ps1.ps1 *.mkv
+.\tomp3.ps1 *.mkv
 
 Convert all MKV files in the current directory.
 
 .EXAMPLE
-.\tomp3.ps1.ps1 *
+.\tomp3.ps1 *
 
 Convert all files in the current directory.
 
 .EXAMPLE
-.\tomp3.ps1.ps1 * -ForceMP3
+.\tomp3.ps1 * -ForceMP3
 
 Convert everything including existing MP3 files.
 
