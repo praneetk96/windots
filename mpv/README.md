@@ -10,6 +10,10 @@ Most of these scripts are created by other developers — I only use them in my 
   Automatically loops videos when playback ends.  
   Source: https://github.com/zydezu/mpvconfig/blob/main/scripts/autoloop.lua
 
+- **autosub**  
+  Automatically download subtitle of opened video.  
+  Source: https://github.com/davidde/mpv-autosub/blob/master/autosub.lua
+
 - **modernx**  
   A modern OSC (on-screen controller) replacement for mpv.  
   Source: https://github.com/zydezu/mpvconfig/blob/main/scripts/modernx.lua
