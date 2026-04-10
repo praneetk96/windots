@@ -12,7 +12,11 @@ Most of these scripts are created by other developers — I only use them in my 
 
 - **autosub**  
   Automatically download subtitle of opened video.  
-  Source: https://github.com/davidde/mpv-autosub/blob/master/autosub.lua
+  Source: https://github.com/davidde/mpv-autosub/
+
+- **hold-to-reverse**  
+  An mpv script that plays the video in reverse while “,” is held (after 0.2s) and returns to normal playback when released.  
+  Source: https://github.com/iiiGerardoiii/mpv-hold-to-reverse
 
 - **modernx**  
   A modern OSC (on-screen controller) replacement for mpv.  
